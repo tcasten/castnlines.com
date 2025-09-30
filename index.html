@@ -1153,8 +1153,8 @@
     
     .guides-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
     
     .guide-card {
@@ -1241,6 +1241,51 @@
       font-weight: 600;
     }
     
+    /* Compact Guide Cards */
+    .guide-card.compact {
+      min-height: auto;
+    }
+    
+    .guide-card.compact .guide-icon {
+      padding: 1.5rem 2rem 0.5rem;
+      font-size: 2.5rem;
+    }
+    
+    .guide-card.compact h3 {
+      font-size: 1.3rem;
+      padding: 0 2rem 1rem;
+      margin: 0;
+    }
+    
+    .guide-card.compact .guide-content {
+      padding: 0 2rem 2rem;
+    }
+    
+    .guide-quick-tips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    
+    .tip-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(0, 123, 191, 0.1), rgba(0, 150, 136, 0.1));
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid rgba(0, 123, 191, 0.2);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .tip-tag:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, rgba(0, 123, 191, 0.2), rgba(0, 150, 136, 0.2));
+      box-shadow: 0 5px 15px rgba(0, 123, 191, 0.3);
+    }
+    
     @media (max-width: 768px) {
       .guides-grid {
         grid-template-columns: 1fr;
@@ -1252,6 +1297,11 @@
       
       .guide-card {
         margin: 0 1rem;
+      }
+      
+      .tip-tag {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
       }
     }
     
@@ -2912,123 +2962,59 @@
   <section id="guides" class="guides-section">
     <div class="container">
       <h2>🎯 Essential Fishing Line Guides</h2>
-      <p class="section-intro">Master the art of fishing line selection with our expert guides</p>
+      <p class="section-intro">Master line selection with our quick reference guides</p>
       
       <div class="guides-grid">
         
-        <div class="guide-card">
+        <div class="guide-card compact">
           <div class="guide-icon">🎣</div>
-          <h3>Line Selection by Species</h3>
+          <h3>Species Selection</h3>
           <div class="guide-content">
-            <h4>Bass Fishing</h4>
-            <ul>
-              <li><strong>Clear Water:</strong> 12-15lb Seaguar fluorocarbon for invisibility</li>
-              <li><strong>Heavy Cover:</strong> 15-20lb fluoro or 30lb braid with fluoro leader</li>
-              <li><strong>Topwater:</strong> 12-15lb monofilament for stretch and floatability</li>
-              <li><strong>Deep Cranking:</strong> 10-12lb mono for maximum depth</li>
-            </ul>
-            
-            <h4>Saltwater Inshore</h4>
-            <ul>
-              <li><strong>Redfish/Snook:</strong> 20lb braid with 20-30lb fluoro leader</li>
-              <li><strong>Trout/Flounder:</strong> 15lb braid with 15-20lb fluoro leader</li>
-              <li><strong>Surf Fishing:</strong> 20-30lb mono main line, 40-50lb shock leader</li>
-            </ul>
-            
-            <h4>Offshore</h4>
-            <ul>
-              <li><strong>Trolling:</strong> 30-80lb mono or fluorocarbon</li>
-              <li><strong>Bottom Fishing:</strong> 40-60lb braid with heavy fluoro leader</li>
-              <li><strong>Kite Fishing:</strong> 20-30lb mono for stretch and visibility</li>
-            </ul>
+            <div class="guide-quick-tips">
+              <span class="tip-tag">🐟 Bass: 12-20lb fluoro</span>
+              <span class="tip-tag">🌊 Inshore: 15-20lb braid + leader</span>
+              <span class="tip-tag">⚓ Offshore: 30-80lb mono/fluoro</span>
+              <span class="tip-tag">🏄 Surf: 20-30lb + shock leader</span>
+            </div>
           </div>
         </div>
 
-        <div class="guide-card">
+        <div class="guide-card compact">
           <div class="guide-icon">🪢</div>
-          <h3>Spooling & Knot Guides</h3>
+          <h3>Essential Knots</h3>
           <div class="guide-content">
-            <h4>Proper Spooling Technique</h4>
-            <ol>
-              <li>Remove old line completely and clean reel</li>
-              <li>Attach new line with arbor knot</li>
-              <li>Maintain slight tension while winding</li>
-              <li>Fill spool to 1/8" from rim edge</li>
-              <li>Test drag settings before fishing</li>
-            </ol>
-            
-            <h4>Essential Knots</h4>
-            <ul>
-              <li><strong>Palomar Knot:</strong> Best for braid to hook/lure (95% strength)</li>
-              <li><strong>Improved Clinch:</strong> Perfect for mono to small hooks</li>
-              <li><strong>Uni Knot:</strong> Versatile for all line types</li>
-              <li><strong>Double Uni:</strong> Best for joining different line types</li>
-              <li><strong>FG Knot:</strong> Strongest braid to fluoro connection</li>
-            </ul>
+            <div class="guide-quick-tips">
+              <span class="tip-tag">💪 Palomar: Braid to hooks</span>
+              <span class="tip-tag">🔗 FG Knot: Braid to leader</span>
+              <span class="tip-tag">🎯 Uni: All-purpose knot</span>
+              <span class="tip-tag">📐 Double Uni: Line joining</span>
+            </div>
           </div>
         </div>
 
-        <div class="guide-card">
+        <div class="guide-card compact">
           <div class="guide-icon">📅</div>
-          <h3>Seasonal Line Choices</h3>
+          <h3>Seasonal Tips</h3>
           <div class="guide-content">
-            <h4>Spring (March-May)</h4>
-            <ul>
-              <li><strong>Water Clarity:</strong> Often stained from rain - use higher vis lines</li>
-              <li><strong>Bass:</strong> 15-17lb fluoro for pre-spawn fishing</li>
-              <li><strong>Saltwater:</strong> 20lb braid as water temps rise</li>
-            </ul>
-            
-            <h4>Summer (June-August)</h4>
-            <ul>
-              <li><strong>Clear Water:</strong> Drop to lighter fluoro (10-12lb)</li>
-              <li><strong>Heavy Cover:</strong> Use braid for vegetation fishing</li>
-              <li><strong>Deep Water:</strong> Thin diameter lines for depth</li>
-            </ul>
-            
-            <h4>Fall (September-November)</h4>
-            <ul>
-              <li><strong>Feeding Frenzy:</strong> Heavier lines for aggressive fish</li>
-              <li><strong>Schooling Fish:</strong> Fast retrieve setups with braid</li>
-              <li><strong>Structure:</strong> Abrasion-resistant fluorocarbon</li>
-            </ul>
-            
-            <h4>Winter (December-February)</h4>
-            <ul>
-              <li><strong>Slow Presentations:</strong> Light fluoro for finesse</li>
-              <li><strong>Cold Water:</strong> Lines stay supple longer</li>
-              <li><strong>Deep Structure:</strong> Sensitive braid for feel</li>
-            </ul>
+            <div class="guide-quick-tips">
+              <span class="tip-tag">🌸 Spring: Heavier for pre-spawn</span>
+              <span class="tip-tag">☀️ Summer: Lighter for clear water</span>
+              <span class="tip-tag">🍂 Fall: Strong for feeding fish</span>
+              <span class="tip-tag">❄️ Winter: Light finesse lines</span>
+            </div>
           </div>
         </div>
 
-        <div class="guide-card">
+        <div class="guide-card compact">
           <div class="guide-icon">🔧</div>
-          <h3>Maintenance & Storage</h3>
+          <h3>Maintenance</h3>
           <div class="guide-content">
-            <h4>Line Maintenance</h4>
-            <ul>
-              <li><strong>Inspect Regularly:</strong> Check for nicks, frays, or memory</li>
-              <li><strong>Rinse After Use:</strong> Especially important for saltwater</li>
-              <li><strong>Retie Often:</strong> Change terminal tackle connections frequently</li>
-              <li><strong>UV Protection:</strong> Store reels away from direct sunlight</li>
-            </ul>
-            
-            <h4>When to Replace</h4>
-            <ul>
-              <li><strong>Monofilament:</strong> Every 6-12 months or after 200+ hours</li>
-              <li><strong>Fluorocarbon:</strong> Every 12-18 months with proper care</li>
-              <li><strong>Braided Line:</strong> Every 2-3 years or when frayed</li>
-              <li><strong>Saltwater:</strong> Replace 2x more frequently due to corrosion</li>
-            </ul>
-            
-            <h4>Storage Tips</h4>
-            <ul>
-              <li>Store spools in cool, dry place</li>
-              <li>Keep away from chemicals and solvents</li>
-              <li>Rotate stock - use oldest spools first</li>
-              <li>Check line before each season</li>
-            </ul>
+            <div class="guide-quick-tips">
+              <span class="tip-tag">🔍 Inspect regularly for damage</span>
+              <span class="tip-tag">💧 Rinse after saltwater use</span>
+              <span class="tip-tag">📦 Replace: Mono 6-12mo, Braid 2-3yr</span>
+              <span class="tip-tag">🏠 Store cool, dry, away from UV</span>
+            </div>
           </div>
         </div>
 
