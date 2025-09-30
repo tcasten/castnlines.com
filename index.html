@@ -524,7 +524,7 @@
     .brand { 
       display: flex; 
       align-items: center; 
-      gap: 15px; 
+      gap: 12px; 
       font-size: 32px; 
       font-weight: 800;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -534,19 +534,19 @@
       transform: translateX(5px);
     }
     
-    .brand img { 
-      height: 65px; 
-      width: auto; 
-      border-radius: 50%;
-      box-shadow: var(--shadow-md);
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 2px solid rgba(255, 255, 255, 0.2);
+    .logo-icon {
+      font-size: 2.8rem;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 2px 8px rgba(251, 191, 36, 0.4));
+      transition: all 0.4s ease;
     }
     
-    .brand img:hover {
-      transform: scale(1.1) rotate(5deg);
-      box-shadow: var(--shadow-xl);
-      border-color: var(--premium-gold);
+    .logo-icon:hover {
+      transform: scale(1.1) rotate(8deg);
+      filter: drop-shadow(0 4px 12px rgba(251, 191, 36, 0.6));
     }
     
     .logo-text {
@@ -554,6 +554,18 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      line-height: 1.1;
+    }
+    
+    .logo-subtitle {
+      font-size: 0.6rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+      margin-left: -12px;
+      margin-top: 2px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.9;
     }
     
     nav { 
@@ -1592,10 +1604,43 @@
       color: white;
     }
     
+    /* Subtle Branding Elements */
+    .brand-watermark {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 1.2rem;
+      opacity: 0.1;
+      pointer-events: none;
+      z-index: 1000;
+      color: var(--primary);
+      font-weight: 700;
+      transform: rotate(-15deg);
+    }
+    
+    .section-brand-accent {
+      display: inline-block;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      opacity: 0.7;
+    }
+    
+    .hero-brand-element {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 8rem;
+      opacity: 0.05;
+      color: white;
+      pointer-events: none;
+      transform: rotate(15deg);
+    }
+    
     /* Expert Resources Section */
     .expert-resources {
       padding: 5rem 0;
       background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+      position: relative;
     }
     
     .expert-resources h2 {
@@ -2079,8 +2124,9 @@
     <div class="container">
       <div class="header-content">
         <div class="brand">
-          <img src="assets/logo.png" alt="Cast N Lines Logo" />
+          <div class="logo-icon">🎣</div>
           <span class="logo-text">Cast N Lines</span>
+          <div class="logo-subtitle">Fishing Line HQ</div>
         </div>
         <nav>
           <a href="#freshwater">Freshwater</a>
@@ -2098,6 +2144,7 @@
   </header>
 
   <section class="hero">
+    <div class="hero-brand-element">🎣</div>
     <div class="container">
       <div class="hero-content">
         <div>
@@ -3566,7 +3613,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h4>🎣 About Cast N Lines</h4>
+          <h4><span class="section-brand-accent">🎣</span>About Cast N Lines</h4>
           <p>We're the ultimate destination for every type of fishing line imaginable. From weekend bass fishing to commercial crabbing operations, our expert team tests and reviews every product to help you make the right choice.</p>
           <p>Real anglers, real testing, honest recommendations.</p>
         </div>
@@ -3813,5 +3860,9 @@
     document.head.appendChild(style);
     
   </script>
+
+  <!-- Subtle Branding Watermark -->
+  <div class="brand-watermark">Cast N Lines</div>
+
 </body>
 </html>
