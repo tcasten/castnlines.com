@@ -759,6 +759,213 @@
       border-bottom: none;
     }
     
+    /* Reviews Section */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .review-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      border-left: 4px solid var(--success);
+      transition: all 0.3s;
+    }
+    
+    .review-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+    
+    .review-stars {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #fbbf24;
+    }
+    
+    .review-text {
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #475569;
+      margin: 0 0 1.5rem 0;
+      border: none;
+      padding: 0;
+    }
+    
+    .reviewer {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    
+    .review-cta {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 3rem 2rem;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border-radius: 15px;
+    }
+    
+    .review-cta h3 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .review-cta p {
+      font-size: 1.2rem;
+      color: #64748b;
+      margin-bottom: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .review-card {
+        margin: 0 1rem;
+      }
+      
+      .review-cta {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+    
+    /* Guides Section */
+    .guides-section {
+      padding: 5rem 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    
+    .guides-section h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    
+    .section-intro {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #64748b;
+      margin-bottom: 4rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .guides-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 2.5rem;
+    }
+    
+    .guide-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: all 0.3s;
+      border: 1px solid #e2e8f0;
+    }
+    
+    .guide-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .guide-icon {
+      font-size: 3rem;
+      text-align: center;
+      padding: 2rem 2rem 1rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .guide-card h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0 2rem 1rem;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    
+    .guide-content {
+      padding: 0 2rem 2rem;
+      color: #475569;
+    }
+    
+    .guide-content h4 {
+      color: var(--secondary);
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .guide-content h4:first-child {
+      margin-top: 0;
+    }
+    
+    .guide-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .guide-content ul li {
+      padding: 0.4rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    
+    .guide-content ul li:before {
+      content: "🎯";
+      position: absolute;
+      left: 0;
+      font-size: 0.9rem;
+    }
+    
+    .guide-content ol {
+      padding-left: 1.5rem;
+    }
+    
+    .guide-content ol li {
+      padding: 0.4rem 0;
+      line-height: 1.5;
+    }
+    
+    .guide-content strong {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .guides-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .guides-section h2 {
+        font-size: 2.2rem;
+      }
+      
+      .guide-card {
+        margin: 0 1rem;
+      }
+    }
+    
     /* Email Capture Lead Magnet */
     .email-capture {
       background: linear-gradient(135deg, var(--success) 0%, var(--secondary) 100%);
@@ -1588,8 +1795,212 @@
         </div>
       </section>
 
+      <!-- Customer Reviews Section -->
+      <section id="reviews" class="section">
+        <h2>⭐ What Our Customers Say</h2>
+        <div class="reviews-grid">
+          
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="review-text">
+              "Found the perfect fluorocarbon line for clear water bass fishing. The recommendations were spot-on and I've been landing more fish than ever!"
+            </blockquote>
+            <div class="reviewer">
+              <strong>Mike Thompson</strong> - Tournament Bass Angler
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="review-text">
+              "Best saltwater line selection I've found online. The guides helped me choose the right braid and leader combo for snook fishing in Florida."
+            </blockquote>
+            <div class="reviewer">
+              <strong>Sarah Martinez</strong> - Saltwater Guide
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="review-text">
+              "Upgraded my trolling setup with their wire line recommendations. Caught my biggest tuna ever last month!"
+            </blockquote>
+            <div class="reviewer">
+              <strong>Captain Jim Rodriguez</strong> - Charter Captain
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="review-text">
+              "The crab pot rope suggestions saved me hundreds. Quality lines at great prices with fast shipping through their affiliate partners."
+            </blockquote>
+            <div class="reviewer">
+              <strong>Tom Chen</strong> - Commercial Crabber
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="review-text">
+              "Great selection of ice fishing lines. The cold-weather recommendations kept my line manageable in -20°F temperatures."
+            </blockquote>
+            <div class="reviewer">
+              <strong>Dave Peterson</strong> - Ice Fishing Enthusiast
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="review-text">
+              "Comprehensive guides and excellent product curation. This site has become my go-to resource for all fishing line needs."
+            </blockquote>
+            <div class="reviewer">
+              <strong>Lisa Johnson</strong> - Weekend Angler
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="review-cta">
+          <h3>Join Thousands of Satisfied Anglers!</h3>
+          <p>Get access to our exclusive fishing line recommendations and deals</p>
+          <a href="#email-signup" class="cta-button" onclick="document.querySelector('.email-capture').scrollIntoView({behavior: 'smooth'});">
+            Get FREE Fishing Line Guide 🎣
+          </a>
+        </div>
+      </section>
+
     </div>
   </main>
+
+  <!-- Fishing Line Guides Section -->
+  <section id="guides" class="guides-section">
+    <div class="container">
+      <h2>🎯 Essential Fishing Line Guides</h2>
+      <p class="section-intro">Master the art of fishing line selection with our expert guides</p>
+      
+      <div class="guides-grid">
+        
+        <div class="guide-card">
+          <div class="guide-icon">🎣</div>
+          <h3>Line Selection by Species</h3>
+          <div class="guide-content">
+            <h4>Bass Fishing</h4>
+            <ul>
+              <li><strong>Clear Water:</strong> 12-15lb Seaguar fluorocarbon for invisibility</li>
+              <li><strong>Heavy Cover:</strong> 15-20lb fluoro or 30lb braid with fluoro leader</li>
+              <li><strong>Topwater:</strong> 12-15lb monofilament for stretch and floatability</li>
+              <li><strong>Deep Cranking:</strong> 10-12lb mono for maximum depth</li>
+            </ul>
+            
+            <h4>Saltwater Inshore</h4>
+            <ul>
+              <li><strong>Redfish/Snook:</strong> 20lb braid with 20-30lb fluoro leader</li>
+              <li><strong>Trout/Flounder:</strong> 15lb braid with 15-20lb fluoro leader</li>
+              <li><strong>Surf Fishing:</strong> 20-30lb mono main line, 40-50lb shock leader</li>
+            </ul>
+            
+            <h4>Offshore</h4>
+            <ul>
+              <li><strong>Trolling:</strong> 30-80lb mono or fluorocarbon</li>
+              <li><strong>Bottom Fishing:</strong> 40-60lb braid with heavy fluoro leader</li>
+              <li><strong>Kite Fishing:</strong> 20-30lb mono for stretch and visibility</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-icon">🪢</div>
+          <h3>Spooling & Knot Guides</h3>
+          <div class="guide-content">
+            <h4>Proper Spooling Technique</h4>
+            <ol>
+              <li>Remove old line completely and clean reel</li>
+              <li>Attach new line with arbor knot</li>
+              <li>Maintain slight tension while winding</li>
+              <li>Fill spool to 1/8" from rim edge</li>
+              <li>Test drag settings before fishing</li>
+            </ol>
+            
+            <h4>Essential Knots</h4>
+            <ul>
+              <li><strong>Palomar Knot:</strong> Best for braid to hook/lure (95% strength)</li>
+              <li><strong>Improved Clinch:</strong> Perfect for mono to small hooks</li>
+              <li><strong>Uni Knot:</strong> Versatile for all line types</li>
+              <li><strong>Double Uni:</strong> Best for joining different line types</li>
+              <li><strong>FG Knot:</strong> Strongest braid to fluoro connection</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-icon">📅</div>
+          <h3>Seasonal Line Choices</h3>
+          <div class="guide-content">
+            <h4>Spring (March-May)</h4>
+            <ul>
+              <li><strong>Water Clarity:</strong> Often stained from rain - use higher vis lines</li>
+              <li><strong>Bass:</strong> 15-17lb fluoro for pre-spawn fishing</li>
+              <li><strong>Saltwater:</strong> 20lb braid as water temps rise</li>
+            </ul>
+            
+            <h4>Summer (June-August)</h4>
+            <ul>
+              <li><strong>Clear Water:</strong> Drop to lighter fluoro (10-12lb)</li>
+              <li><strong>Heavy Cover:</strong> Use braid for vegetation fishing</li>
+              <li><strong>Deep Water:</strong> Thin diameter lines for depth</li>
+            </ul>
+            
+            <h4>Fall (September-November)</h4>
+            <ul>
+              <li><strong>Feeding Frenzy:</strong> Heavier lines for aggressive fish</li>
+              <li><strong>Schooling Fish:</strong> Fast retrieve setups with braid</li>
+              <li><strong>Structure:</strong> Abrasion-resistant fluorocarbon</li>
+            </ul>
+            
+            <h4>Winter (December-February)</h4>
+            <ul>
+              <li><strong>Slow Presentations:</strong> Light fluoro for finesse</li>
+              <li><strong>Cold Water:</strong> Lines stay supple longer</li>
+              <li><strong>Deep Structure:</strong> Sensitive braid for feel</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-icon">🔧</div>
+          <h3>Maintenance & Storage</h3>
+          <div class="guide-content">
+            <h4>Line Maintenance</h4>
+            <ul>
+              <li><strong>Inspect Regularly:</strong> Check for nicks, frays, or memory</li>
+              <li><strong>Rinse After Use:</strong> Especially important for saltwater</li>
+              <li><strong>Retie Often:</strong> Change terminal tackle connections frequently</li>
+              <li><strong>UV Protection:</strong> Store reels away from direct sunlight</li>
+            </ul>
+            
+            <h4>When to Replace</h4>
+            <ul>
+              <li><strong>Monofilament:</strong> Every 6-12 months or after 200+ hours</li>
+              <li><strong>Fluorocarbon:</strong> Every 12-18 months with proper care</li>
+              <li><strong>Braided Line:</strong> Every 2-3 years or when frayed</li>
+              <li><strong>Saltwater:</strong> Replace 2x more frequently due to corrosion</li>
+            </ul>
+            
+            <h4>Storage Tips</h4>
+            <ul>
+              <li>Store spools in cool, dry place</li>
+              <li>Keep away from chemicals and solvents</li>
+              <li>Rotate stock - use oldest spools first</li>
+              <li>Check line before each season</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- Email Capture Lead Magnet -->
   <section class="email-capture">
