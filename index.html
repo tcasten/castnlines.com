@@ -1461,6 +1461,137 @@
       box-shadow: 0 5px 15px rgba(0, 123, 191, 0.3);
     }
     
+    /* Fishing Scenarios Section */
+    .scenarios-section {
+      padding: 5rem 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    }
+    
+    .scenarios-section h2 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 4rem;
+    }
+    
+    .scenario-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      border: 1px solid #e2e8f0;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .scenario-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+    
+    .scenario-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
+    
+    .scenario-icon {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+    
+    .scenario-card h3 {
+      color: var(--primary);
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+    
+    .scenario-content h4 {
+      color: var(--secondary);
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.8rem 0;
+      font-weight: 600;
+    }
+    
+    .scenario-content h4:first-child {
+      margin-top: 0;
+    }
+    
+    .scenario-content p {
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    
+    .scenario-content strong {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    
+    .scenario-cta {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    
+    .scenario-cta h3 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    .scenario-cta p {
+      color: #64748b;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .scenario-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .scenario-btn {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 123, 191, 0.3);
+    }
+    
+    .scenario-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 123, 191, 0.4);
+      color: white;
+    }
+    
     /* Expert Resources Section */
     .expert-resources {
       padding: 5rem 0;
@@ -3215,6 +3346,94 @@
           <span class="keyword-tag">trolling line setup</span>
           <span class="keyword-tag">fishing line strength</span>
           <span class="keyword-tag">line counter reels</span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Comprehensive Fishing Line Scenarios Section -->
+  <section class="scenarios-section">
+    <div class="container">
+      <h2>🎣 Master Every Fishing Scenario: Complete Line Selection Guide</h2>
+      <p class="section-intro">From Florida flats to Great Lakes depths - we've tested every line in every condition so you catch more fish!</p>
+      
+      <div class="scenarios-grid">
+        
+        <div class="scenario-card">
+          <div class="scenario-icon">🐟</div>
+          <h3>Bass Fishing Mastery</h3>
+          <div class="scenario-content">
+            <h4>Clear Water Scenarios</h4>
+            <p><strong>Fluorocarbon dominance:</strong> 12-15lb Seaguar InvizX for finesse presentations. Near-invisible underwater, superior sensitivity for detecting light bites.</p>
+            
+            <h4>Heavy Cover Situations</h4>
+            <p><strong>Braid + Fluoro leader combo:</strong> 30-50lb PowerPro main line with 15-20lb Seaguar leader. Maximum strength with stealth presentation.</p>
+            
+            <h4>Topwater Excellence</h4>
+            <p><strong>Monofilament advantage:</strong> 12-15lb Berkley Trilene XL. Natural stretch prevents pulled hooks on explosive strikes. Floats for perfect lure action.</p>
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="scenario-icon">🌊</div>
+          <h3>Saltwater Domination</h3>
+          <div class="scenario-content">
+            <h4>Inshore Fishing</h4>
+            <p><strong>Braid to leader system:</strong> 20lb PowerPro main line + 20-30lb Seaguar Blue Label leader. Strength for structure, invisibility for wary fish.</p>
+            
+            <h4>Surf Fishing Power</h4>
+            <p><strong>Shock leader setup:</strong> 20-30lb Ande mono main + 50-80lb shock leader. Handles casting stress and structure abrasion.</p>
+            
+            <h4>Offshore Trolling</h4>
+            <p><strong>Monofilament stretch advantage:</strong> 30-80lb Ande Tournament mono. Natural stretch cushions boat movement and hook-setting impact.</p>
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="scenario-icon">❄️</div>
+          <h3>Seasonal Line Strategies</h3>
+          <div class="scenario-content">
+            <h4>Spring Pre-Spawn</h4>
+            <p><strong>Heavier presentations:</strong> 15-17lb fluorocarbon for aggressive fish. Water clarity varies - be ready to adjust.</p>
+            
+            <h4>Summer Finesse</h4>
+            <p><strong>Lighter, clearer lines:</strong> 10-12lb fluoro in gin-clear water. Fish are educated and line-shy.</p>
+            
+            <h4>Fall Feeding Frenzy</h4>
+            <p><strong>Power fishing lines:</strong> Braid for reaction baits, heavy fluoro for structure. Fish are aggressive but around cover.</p>
+            
+            <h4>Winter Precision</h4>
+            <p><strong>Ultra-finesse approach:</strong> 6-8lb fluorocarbon for slow presentations. Maximum sensitivity in cold water.</p>
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="scenario-icon">🎯</div>
+          <h3>Species-Specific Selection</h3>
+          <div class="scenario-content">
+            <h4>Walleye Precision</h4>
+            <p><strong>Sensitivity priority:</strong> 8-12lb fluorocarbon or braid. Detecting light bites is crucial for success.</p>
+            
+            <h4>Pike & Musky Power</h4>
+            <p><strong>Abrasion resistance:</strong> Heavy fluoro leaders (50-80lb) or wire. Teeth protection is essential.</p>
+            
+            <h4>Trout Stealth</h4>
+            <p><strong>Invisibility focus:</strong> 4-6lb fluorocarbon. Ultra-clear water requires maximum stealth approach.</p>
+            
+            <h4>Catfish Strength</h4>
+            <p><strong>Heavy mono or braid:</strong> 20-50lb depending on size. Structure and current require serious strength.</p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="scenario-cta">
+        <h3>Ready to Dominate Your Next Fishing Trip?</h3>
+        <p>Browse our expert-tested selection above and get the exact line combinations that win tournaments!</p>
+        <div class="scenario-buttons">
+          <a href="#freshwater" class="scenario-btn">Shop Freshwater Lines</a>
+          <a href="#saltwater" class="scenario-btn">Browse Saltwater Gear</a>
         </div>
       </div>
       
