@@ -12,6 +12,84 @@
   <meta property="og:image" content="assets/logo.png" />
   <meta property="og:type" content="website" />
   
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  
+  <!-- Enhanced SEO and Social Media Meta Tags -->
+  <meta name="keywords" content="fishing line, bass fishing, saltwater fishing, trolling line, crab rope, fishing gear, monofilament, fluorocarbon, braided line, fishing equipment" />
+  <meta name="author" content="Cast N Lines" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:url" content="https://castnlines.com" />
+  <meta property="og:site_name" content="Cast N Lines" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cast N Lines – Ultimate Fishing Line Hub" />
+  <meta name="twitter:description" content="Your complete fishing line destination! Every type for every angler." />
+  <meta name="twitter:image" content="assets/logo.png" />
+  
+  <!-- Structured Data for Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Cast N Lines",
+    "url": "https://castnlines.com",
+    "description": "Ultimate fishing line hub with bass, saltwater, trolling, and crabbing equipment",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://castnlines.com/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Cast N Lines",
+    "description": "Complete fishing line destination with affiliate products from top brands",
+    "url": "https://castnlines.com",
+    "logo": "https://castnlines.com/assets/logo.png",
+    "sameAs": [
+      "https://github.com/tcasten/castnlines.com"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Fishing Lines & Equipment",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Berkley Trilene XL Monofilament",
+            "category": "Fishing Line"
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Seaguar InvizX Fluorocarbon",
+            "category": "Fishing Line"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="assets/logo.png" as="image">
+  <link rel="dns-prefetch" href="//www.amazon.com">
+  <link rel="dns-prefetch" href="//www.basspro.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  
   <style>
     :root {
       --primary: #0369a1;
@@ -453,6 +531,39 @@
       box-shadow: 0 6px 15px rgba(139, 90, 60, 0.3);
     }
     
+    .btn-dicks {
+      background: #003d7a;
+      color: white;
+    }
+    
+    .btn-dicks:hover {
+      background: #002856;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 61, 122, 0.3);
+    }
+    
+    .btn-walmart {
+      background: #004c91;
+      color: white;
+    }
+    
+    .btn-walmart:hover {
+      background: #003366;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 76, 145, 0.3);
+    }
+    
+    .btn-ebay {
+      background: #e53238;
+      color: white;
+    }
+    
+    .btn-ebay:hover {
+      background: #c72328;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(229, 50, 56, 0.3);
+    }
+    
     /* Specialty Sections */
     .specialty-grid {
       display: grid;
@@ -502,12 +613,55 @@
       border-bottom: none;
     }
     
+    /* Social Sharing */
+    .social-sharing {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    
+    .social-sharing h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    
+    .share-btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .share-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .share-btn.facebook:hover { background: #1877f2; }
+    .share-btn.twitter:hover { background: #1da1f2; }
+    .share-btn.reddit:hover { background: #ff4500; }
+    .share-btn.pinterest:hover { background: #bd081c; }
+
     /* Footer */
     footer { 
       background: linear-gradient(135deg, var(--dark), #0f172a); 
       color: white; 
       padding: 4rem 0 2rem; 
-      margin-top: 6rem; 
+      margin-top: 2rem; 
     }
     
     .footer-content { 
@@ -757,6 +911,9 @@
                 <a href="https://www.amazon.com/s?k=berkley+trilene+xl+monofilament+fishing+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
                 <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+trilene+xl+monofilament" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
                 <a href="https://www.cabelas.com/search?q=berkley+trilene+xl" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+trilene+xl" target="_blank" class="btn btn-dicks">⚽ Dick's</a>
+                <a href="https://www.walmart.com/search?q=berkley+trilene+xl+fishing+line" target="_blank" class="btn btn-walmart">🛍️ Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+trilene+xl+monofilament" target="_blank" class="btn btn-ebay">💎 eBay</a>
               </div>
             </div>
           </article>
@@ -1196,6 +1353,20 @@
     </div>
   </main>
 
+  <!-- Social Sharing Section -->
+  <section class="social-sharing">
+    <div class="container">
+      <h3>📱 Share Cast N Lines</h3>
+      <p>Help fellow anglers discover the best fishing line deals!</p>
+      <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://castnlines.com" target="_blank" class="share-btn facebook">📘 Facebook</a>
+        <a href="https://twitter.com/intent/tweet?url=https://castnlines.com&text=Best%20fishing%20line%20deals%20at%20Cast%20N%20Lines!" target="_blank" class="share-btn twitter">🐦 Twitter</a>
+        <a href="https://www.reddit.com/submit?url=https://castnlines.com&title=Ultimate%20Fishing%20Line%20Hub" target="_blank" class="share-btn reddit">🔴 Reddit</a>
+        <a href="https://www.pinterest.com/pin/create/button/?url=https://castnlines.com&description=Best%20fishing%20lines%20for%20every%20angler" target="_blank" class="share-btn pinterest">📌 Pinterest</a>
+      </div>
+    </div>
+  </section>
+
   <footer id="about">
     <div class="container">
       <div class="footer-content">
@@ -1231,7 +1402,7 @@
         
         <div class="footer-section">
           <h4>💰 Legal Information</h4>
-          <p><strong>Affiliate Disclosure:</strong> Cast N Lines participates in affiliate programs including Amazon Associates (ID: castnfish02-20), Bass Pro Shops, and Cabela's. We earn from qualifying purchases made through our links at no extra cost to you.</p>
+          <p><strong>Affiliate Disclosure:</strong> Cast N Lines participates in affiliate programs including Amazon Associates (ID: castnfish02-20), Bass Pro Shops, Cabela's, Dick's Sporting Goods, Walmart, and eBay Partner Network. We earn from qualifying purchases made through our links at no extra cost to you.</p>
           <p>This helps us provide free, comprehensive reviews and maintain our independence.</p>
         </div>
       </div>
