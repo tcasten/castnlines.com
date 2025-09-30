@@ -1036,81 +1036,29 @@
       box-shadow: var(--shadow-md);
     }
     
-    .btn-amazon { 
-      background: #ff9900; 
-      color: white; 
+    /* Simple Retailer Text Links */
+    .retailer-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      padding: 0.3rem 0;
+      display: inline-block;
     }
     
-    .btn-amazon:hover { 
-      background: #e68900; 
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(255, 153, 0, 0.3);
+    .retailer-link:hover {
+      color: var(--secondary);
+      text-decoration: underline;
     }
     
-    .btn-basspro { 
-      background: #2563eb; 
-      color: white; 
-    }
-    
-    .btn-basspro:hover { 
-      background: #1d4ed8; 
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
-    }
-    
-    .btn-google { 
-      background: #10b981; 
-      color: white; 
-    }
-    
-    .btn-google:hover { 
-      background: #059669; 
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3);
-    }
-    
-    .btn-cabelas {
-      background: #8b5a3c;
-      color: white;
-    }
-    
-    .btn-cabelas:hover {
-      background: #704a32;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(139, 90, 60, 0.3);
-    }
-    
-    .btn-dicks {
-      background: #003d7a;
-      color: white;
-    }
-    
-    .btn-dicks:hover {
-      background: #002856;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(0, 61, 122, 0.3);
-    }
-    
-    .btn-walmart {
-      background: #004c91;
-      color: white;
-    }
-    
-    .btn-walmart:hover {
-      background: #003366;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(0, 76, 145, 0.3);
-    }
-    
-    .btn-ebay {
-      background: #e53238;
-      color: white;
-    }
-    
-    .btn-ebay:hover {
-      background: #c72328;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(229, 50, 56, 0.3);
+    .product-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
     }
     
     /* Specialty Sections */
@@ -2120,12 +2068,12 @@
                 <li>Perfect for bass, walleye, crappie</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=berkley+trilene+xl+monofilament+fishing+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Berkley Trilene XL')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+trilene+xl+monofilament" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Berkley Trilene XL')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=berkley+trilene+xl" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Berkley Trilene XL')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+trilene+xl" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Berkley Trilene XL')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=berkley+trilene+xl+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Berkley Trilene XL')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+trilene+xl+monofilament" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Berkley Trilene XL')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=berkley+trilene+xl+monofilament+fishing+line&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Berkley Trilene XL')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+trilene+xl+monofilament" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Berkley Trilene XL')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=berkley+trilene+xl" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Berkley Trilene XL')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+trilene+xl" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Berkley Trilene XL')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=berkley+trilene+xl+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Berkley Trilene XL')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+trilene+xl+monofilament" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Berkley Trilene XL')">eBay</a>
               </div>
             </div>
           </article>
@@ -2145,9 +2093,9 @@
                 <li>Perfect for clear water bass</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=seaguar+invizx+fluorocarbon+fishing+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=seaguar+invizx+fluorocarbon" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.google.com/search?tbm=shop&q=seaguar+invizx+fluorocarbon" target="_blank" class="btn btn-google">🔍 Compare</a>
+                <a href="https://www.amazon.com/s?k=seaguar+invizx+fluorocarbon+fishing+line&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=seaguar+invizx+fluorocarbon" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.google.com/search?tbm=shop&q=seaguar+invizx+fluorocarbon" target="_blank" class="retailer-link">🔍 Compare</a>
               </div>
             </div>
           </article>
@@ -2167,9 +2115,9 @@
                 <li>Flippin', froggin', heavy cover</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=powerpro+super+slick+v2+braided+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=powerpro+super+slick+v2" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=powerpro+super+slick" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.amazon.com/s?k=powerpro+super+slick+v2+braided+line&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=powerpro+super+slick+v2" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=powerpro+super+slick" target="_blank" class="retailer-link">Cabela's</a>
               </div>
             </div>
           </article>
@@ -2189,12 +2137,12 @@
                 <li>Superior handling and casting</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=sufix+832+advanced+superline&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Sufix 832')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=sufix+832+advanced" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Sufix 832')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=sufix+832" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Sufix 832')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=sufix+832" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Sufix 832')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=sufix+832+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Sufix 832')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=sufix+832+advanced+superline" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Sufix 832')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=sufix+832+advanced+superline&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Sufix 832')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=sufix+832+advanced" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Sufix 832')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=sufix+832" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Sufix 832')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=sufix+832" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Sufix 832')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=sufix+832+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Sufix 832')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=sufix+832+advanced+superline" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Sufix 832')">eBay</a>
               </div>
             </div>
           </article>
@@ -2214,12 +2162,12 @@
                 <li>Tournament angler choice</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=seaguar+tatsu+fluorocarbon&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Seaguar Tatsu')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=seaguar+tatsu" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Seaguar Tatsu')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=seaguar+tatsu" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Seaguar Tatsu')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=seaguar+tatsu" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Seaguar Tatsu')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=seaguar+tatsu+fluorocarbon" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Seaguar Tatsu')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=seaguar+tatsu+fluorocarbon" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Seaguar Tatsu')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=seaguar+tatsu+fluorocarbon&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Seaguar Tatsu')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=seaguar+tatsu" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Seaguar Tatsu')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=seaguar+tatsu" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Seaguar Tatsu')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=seaguar+tatsu" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Seaguar Tatsu')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=seaguar+tatsu+fluorocarbon" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Seaguar Tatsu')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=seaguar+tatsu+fluorocarbon" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Seaguar Tatsu')">eBay</a>
               </div>
             </div>
           </article>
@@ -2239,12 +2187,12 @@
                 <li>Great value for money</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=spiderwire+stealth+blue+camo&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Spiderwire Stealth')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=spiderwire+stealth+blue" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Spiderwire Stealth')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=spiderwire+stealth" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Spiderwire Stealth')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=spiderwire+stealth" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Spiderwire Stealth')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=spiderwire+stealth+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Spiderwire Stealth')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=spiderwire+stealth+blue+camo" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Spiderwire Stealth')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=spiderwire+stealth+blue+camo&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Spiderwire Stealth')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=spiderwire+stealth+blue" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Spiderwire Stealth')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=spiderwire+stealth" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Spiderwire Stealth')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=spiderwire+stealth" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Spiderwire Stealth')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=spiderwire+stealth+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Spiderwire Stealth')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=spiderwire+stealth+blue+camo" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Spiderwire Stealth')">eBay</a>
               </div>
             </div>
           </article>
@@ -2264,12 +2212,12 @@
                 <li>Perfect for ice fishing</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=berkley+fireline+crystal+superline&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Berkley FireLine')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+fireline+crystal" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Berkley FireLine')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=berkley+fireline" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Berkley FireLine')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+fireline" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Berkley FireLine')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=berkley+fireline+crystal" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Berkley FireLine')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+fireline+crystal" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Berkley FireLine')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=berkley+fireline+crystal+superline&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Berkley FireLine')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+fireline+crystal" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Berkley FireLine')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=berkley+fireline" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Berkley FireLine')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+fireline" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Berkley FireLine')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=berkley+fireline+crystal" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Berkley FireLine')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+fireline+crystal" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Berkley FireLine')">eBay</a>
               </div>
             </div>
           </article>
@@ -2289,12 +2237,12 @@
                 <li>Great for beginners</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=stren+original+monofilament&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Stren Original')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=stren+original+service" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Stren Original')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=stren+original" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Stren Original')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=stren+original" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Stren Original')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=stren+original+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Stren Original')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=stren+original+monofilament" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Stren Original')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=stren+original+monofilament&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Stren Original')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=stren+original+service" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Stren Original')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=stren+original" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Stren Original')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=stren+original" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Stren Original')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=stren+original+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Stren Original')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=stren+original+monofilament" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Stren Original')">eBay</a>
               </div>
             </div>
           </article>
@@ -2314,12 +2262,12 @@
                 <li>Perfect for spinning reels</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=p-line+floroclear+fishing+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'P-Line Floroclear')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=p-line+floroclear" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'P-Line Floroclear')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=p-line+floroclear" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'P-Line Floroclear')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=p-line+floroclear" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'P-Line Floroclear')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=p-line+floroclear" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'P-Line Floroclear')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=p-line+floroclear" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'P-Line Floroclear')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=p-line+floroclear+fishing+line&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'P-Line Floroclear')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=p-line+floroclear" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'P-Line Floroclear')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=p-line+floroclear" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'P-Line Floroclear')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=p-line+floroclear" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'P-Line Floroclear')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=p-line+floroclear" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'P-Line Floroclear')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=p-line+floroclear" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'P-Line Floroclear')">eBay</a>
               </div>
             </div>
           </article>
@@ -2339,12 +2287,12 @@
                 <li>Multiple colors available</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=berkley+big+game+monofilament&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Berkley Big Game')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+big+game+monofilament" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Berkley Big Game')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=berkley+big+game" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Berkley Big Game')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+big+game" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Berkley Big Game')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=berkley+big+game+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Berkley Big Game')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+big+game+monofilament" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Berkley Big Game')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=berkley+big+game+monofilament&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Berkley Big Game')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+big+game+monofilament" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Berkley Big Game')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=berkley+big+game" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Berkley Big Game')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+big+game" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Berkley Big Game')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=berkley+big+game+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Berkley Big Game')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+big+game+monofilament" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Berkley Big Game')">eBay</a>
               </div>
             </div>
           </article>
@@ -2374,9 +2322,9 @@
                 <li>Big game saltwater proven</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=ande+monster+monofilament+saltwater&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=ande+monster+monofilament" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.google.com/search?tbm=shop&q=ande+monster+monofilament" target="_blank" class="btn btn-google">🔍 Compare</a>
+                <a href="https://www.amazon.com/s?k=ande+monster+monofilament+saltwater&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=ande+monster+monofilament" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.google.com/search?tbm=shop&q=ande+monster+monofilament" target="_blank" class="retailer-link">🔍 Compare</a>
               </div>
             </div>
           </article>
@@ -2396,9 +2344,9 @@
                 <li>Tuna, marlin, shark leader</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=seaguar+blue+label+fluorocarbon+leader&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=seaguar+blue+label+leader" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=seaguar+blue+label" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.amazon.com/s?k=seaguar+blue+label+fluorocarbon+leader&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=seaguar+blue+label+leader" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=seaguar+blue+label" target="_blank" class="retailer-link">Cabela's</a>
               </div>
             </div>
           </article>
@@ -2418,9 +2366,9 @@
                 <li>Redfish, snook, tarpon ready</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=sufix+832+coastal+camo+braided&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=sufix+832+coastal+camo" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.google.com/search?tbm=shop&q=sufix+832+coastal+camo" target="_blank" class="btn btn-google">🔍 Compare</a>
+                <a href="https://www.amazon.com/s?k=sufix+832+coastal+camo+braided&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=sufix+832+coastal+camo" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.google.com/search?tbm=shop&q=sufix+832+coastal+camo" target="_blank" class="retailer-link">🔍 Compare</a>
               </div>
             </div>
           </article>
@@ -2440,12 +2388,12 @@
                 <li>Perfect for redfish, snook, tarpon</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=powerpro+super+slick+v2+aqua+green&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'PowerPro SSV2 Aqua')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=powerpro+super+slick+aqua" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'PowerPro SSV2 Aqua')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=powerpro+aqua+green" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'PowerPro SSV2 Aqua')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=powerpro+aqua+green" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'PowerPro SSV2 Aqua')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=powerpro+aqua+green+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'PowerPro SSV2 Aqua')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=powerpro+super+slick+aqua+green" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'PowerPro SSV2 Aqua')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=powerpro+super+slick+v2+aqua+green&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'PowerPro SSV2 Aqua')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=powerpro+super+slick+aqua" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'PowerPro SSV2 Aqua')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=powerpro+aqua+green" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'PowerPro SSV2 Aqua')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=powerpro+aqua+green" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'PowerPro SSV2 Aqua')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=powerpro+aqua+green+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'PowerPro SSV2 Aqua')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=powerpro+super+slick+aqua+green" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'PowerPro SSV2 Aqua')">eBay</a>
               </div>
             </div>
           </article>
@@ -2465,12 +2413,12 @@
                 <li>Ideal for surf fishing</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=ande+premium+monofilament+saltwater&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Ande Premium')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=ande+premium+monofilament" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Ande Premium')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=ande+premium" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Ande Premium')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=ande+premium" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Ande Premium')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=ande+premium+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Ande Premium')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=ande+premium+monofilament" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Ande Premium')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=ande+premium+monofilament+saltwater&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Ande Premium')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=ande+premium+monofilament" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Ande Premium')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=ande+premium" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Ande Premium')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=ande+premium" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Ande Premium')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=ande+premium+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Ande Premium')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=ande+premium+monofilament" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Ande Premium')">eBay</a>
               </div>
             </div>
           </article>
@@ -2490,12 +2438,12 @@
                 <li>Tournament grade quality</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=momoi+hi+catch+fluorocarbon+leader&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Momoi Hi-Catch')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=momoi+hi+catch+leader" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Momoi Hi-Catch')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=momoi+hi+catch" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Momoi Hi-Catch')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=momoi+hi+catch" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Momoi Hi-Catch')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=momoi+hi+catch+leader" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Momoi Hi-Catch')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=momoi+hi+catch+fluorocarbon" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Momoi Hi-Catch')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=momoi+hi+catch+fluorocarbon+leader&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Momoi Hi-Catch')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=momoi+hi+catch+leader" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Momoi Hi-Catch')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=momoi+hi+catch" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Momoi Hi-Catch')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=momoi+hi+catch" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Momoi Hi-Catch')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=momoi+hi+catch+leader" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Momoi Hi-Catch')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=momoi+hi+catch+fluorocarbon" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Momoi Hi-Catch')">eBay</a>
               </div>
             </div>
           </article>
@@ -2515,12 +2463,12 @@
                 <li>Essential for fly fishing</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=rio+saltwater+dacron+backing&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Rio Saltwater Backing')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=rio+saltwater+backing" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Rio Saltwater Backing')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=rio+saltwater+backing" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Rio Saltwater Backing')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=rio+saltwater+backing" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Rio Saltwater Backing')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=rio+saltwater+dacron+backing" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Rio Saltwater Backing')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=rio+saltwater+dacron+backing" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Rio Saltwater Backing')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=rio+saltwater+dacron+backing&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Rio Saltwater Backing')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=rio+saltwater+backing" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Rio Saltwater Backing')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=rio+saltwater+backing" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Rio Saltwater Backing')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=rio+saltwater+backing" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Rio Saltwater Backing')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=rio+saltwater+dacron+backing" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Rio Saltwater Backing')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=rio+saltwater+dacron+backing" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Rio Saltwater Backing')">eBay</a>
               </div>
             </div>
           </article>
@@ -2540,12 +2488,12 @@
                 <li>Essential for shark fishing</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=afw+shark+wire+leader&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'AFW Shark Wire')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=afw+shark+wire+leader" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'AFW Shark Wire')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=afw+shark+wire" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'AFW Shark Wire')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=afw+shark+wire" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'AFW Shark Wire')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=afw+shark+wire+leader" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'AFW Shark Wire')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=afw+shark+wire+leader" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'AFW Shark Wire')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=afw+shark+wire+leader&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'AFW Shark Wire')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=afw+shark+wire+leader" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'AFW Shark Wire')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=afw+shark+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'AFW Shark Wire')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=afw+shark+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'AFW Shark Wire')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=afw+shark+wire+leader" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'AFW Shark Wire')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=afw+shark+wire+leader" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'AFW Shark Wire')">eBay</a>
               </div>
             </div>
           </article>
@@ -2565,12 +2513,12 @@
                 <li>Perfect for pier fishing</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=berkley+trilene+xt+extra+tough&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Trilene XT')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+trilene+xt" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Trilene XT')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=berkley+trilene+xt" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Trilene XT')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+trilene+xt" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Trilene XT')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=berkley+trilene+xt+fishing+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Trilene XT')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+trilene+xt" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Trilene XT')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=berkley+trilene+xt+extra+tough&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Trilene XT')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+trilene+xt" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Trilene XT')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=berkley+trilene+xt" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Trilene XT')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+trilene+xt" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Trilene XT')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=berkley+trilene+xt+fishing+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Trilene XT')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+trilene+xt" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Trilene XT')">eBay</a>
               </div>
             </div>
           </article>
@@ -2600,9 +2548,9 @@
                 <li>Deep trolling for tuna, wahoo</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=mason+stainless+steel+trolling+wire&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=mason+stainless+steel+wire" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=mason+trolling+wire" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.amazon.com/s?k=mason+stainless+steel+trolling+wire&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=mason+stainless+steel+wire" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=mason+trolling+wire" target="_blank" class="retailer-link">Cabela's</a>
               </div>
             </div>
           </article>
@@ -2622,9 +2570,9 @@
                 <li>Perfect for salmon, trout trolling</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=sufix+lead+core+trolling+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=sufix+lead+core+line" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.google.com/search?tbm=shop&q=sufix+lead+core+trolling" target="_blank" class="btn btn-google">🔍 Compare</a>
+                <a href="https://www.amazon.com/s?k=sufix+lead+core+trolling+line&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=sufix+lead+core+line" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.google.com/search?tbm=shop&q=sufix+lead+core+trolling" target="_blank" class="retailer-link">🔍 Compare</a>
               </div>
             </div>
           </article>
@@ -2644,9 +2592,9 @@
                 <li>Salmon & steelhead standard</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=32lb+copper+trolling+wire+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=copper+trolling+line" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=copper+trolling+wire" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.amazon.com/s?k=32lb+copper+trolling+wire+line&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=copper+trolling+line" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=copper+trolling+wire" target="_blank" class="retailer-link">Cabela's</a>
               </div>
             </div>
           </article>
@@ -2666,12 +2614,12 @@
                 <li>Salmon & trout proven</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=berkley+mcmahon+copper+trolling+line&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Berkley Copper')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+mcmahon+copper" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Berkley Copper')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=berkley+copper+line" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Berkley Copper')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+copper+line" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Berkley Copper')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=berkley+copper+trolling+line" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Berkley Copper')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+mcmahon+copper+line" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Berkley Copper')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=berkley+mcmahon+copper+trolling+line&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Berkley Copper')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+mcmahon+copper" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Berkley Copper')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=berkley+copper+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Berkley Copper')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=berkley+copper+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Berkley Copper')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=berkley+copper+trolling+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Berkley Copper')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=berkley+mcmahon+copper+line" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Berkley Copper')">eBay</a>
               </div>
             </div>
           </article>
@@ -2691,12 +2639,12 @@
                 <li>Perfect for wahoo, king mackerel</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=offshore+angler+stainless+wire&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Offshore Angler Wire')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=offshore+angler+stainless+wire" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Offshore Angler Wire')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=offshore+angler+wire" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Offshore Angler Wire')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=offshore+angler+wire" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Offshore Angler Wire')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=offshore+angler+stainless+wire" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Offshore Angler Wire')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=offshore+angler+stainless+wire" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Offshore Angler Wire')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=offshore+angler+stainless+wire&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Offshore Angler Wire')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=offshore+angler+stainless+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Offshore Angler Wire')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=offshore+angler+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Offshore Angler Wire')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=offshore+angler+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Offshore Angler Wire')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=offshore+angler+stainless+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Offshore Angler Wire')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=offshore+angler+stainless+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Offshore Angler Wire')">eBay</a>
               </div>
             </div>
           </article>
@@ -2716,12 +2664,12 @@
                 <li>Premium downrigger setup</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=scotty+downrigger+stainless+cable&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Scotty Downrigger')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=scotty+downrigger+cable" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Scotty Downrigger')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=scotty+downrigger+cable" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Scotty Downrigger')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=scotty+downrigger" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Scotty Downrigger')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=scotty+downrigger+cable" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Scotty Downrigger')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=scotty+downrigger+cable" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Scotty Downrigger')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=scotty+downrigger+stainless+cable&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Scotty Downrigger')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=scotty+downrigger+cable" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Scotty Downrigger')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=scotty+downrigger+cable" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Scotty Downrigger')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=scotty+downrigger" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Scotty Downrigger')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=scotty+downrigger+cable" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Scotty Downrigger')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=scotty+downrigger+cable" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Scotty Downrigger')">eBay</a>
               </div>
             </div>
           </article>
@@ -2741,12 +2689,12 @@
                 <li>Perfect for trolling rigs</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=afw+micro+ultra+7x7+wire&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'AFW Micro Ultra')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=afw+micro+ultra+wire" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'AFW Micro Ultra')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=afw+micro+ultra" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'AFW Micro Ultra')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=afw+micro+ultra" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'AFW Micro Ultra')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=afw+micro+ultra+wire" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'AFW Micro Ultra')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=afw+micro+ultra+7x7" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'AFW Micro Ultra')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=afw+micro+ultra+7x7+wire&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'AFW Micro Ultra')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=afw+micro+ultra+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'AFW Micro Ultra')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=afw+micro+ultra" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'AFW Micro Ultra')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=afw+micro+ultra" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'AFW Micro Ultra')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=afw+micro+ultra+wire" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'AFW Micro Ultra')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=afw+micro+ultra+7x7" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'AFW Micro Ultra')">eBay</a>
               </div>
             </div>
           </article>
@@ -2776,9 +2724,9 @@
                 <li>Bright visibility colors</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=crab+pot+rope+polypropylene+5%2F16&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=crab+pot+rope" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.google.com/search?tbm=shop&q=crab+pot+rope+polypropylene" target="_blank" class="btn btn-google">🔍 Compare</a>
+                <a href="https://www.amazon.com/s?k=crab+pot+rope+polypropylene+5%2F16&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=crab+pot+rope" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.google.com/search?tbm=shop&q=crab+pot+rope+polypropylene" target="_blank" class="retailer-link">🔍 Compare</a>
               </div>
             </div>
           </article>
@@ -2798,9 +2746,9 @@
                 <li>Commercial crab pot standard</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=leaded+crab+trap+line+lead+core&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=leaded+crab+line" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=crab+trap+line" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.amazon.com/s?k=leaded+crab+trap+line+lead+core&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=leaded+crab+line" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=crab+trap+line" target="_blank" class="retailer-link">Cabela's</a>
               </div>
             </div>
           </article>
@@ -2820,9 +2768,9 @@
                 <li>Perfect for dock crabbing</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=crab+snare+line+kit+hand+crabbing&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=crab+snare+line" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.google.com/search?tbm=shop&q=crab+snare+hand+line" target="_blank" class="btn btn-google">🔍 Compare</a>
+                <a href="https://www.amazon.com/s?k=crab+snare+line+kit+hand+crabbing&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=crab+snare+line" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.google.com/search?tbm=shop&q=crab+snare+hand+line" target="_blank" class="retailer-link">🔍 Compare</a>
               </div>
             </div>
           </article>
@@ -2852,9 +2800,9 @@
                 <li>Essential for precise trolling</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=digital+fishing+line+counter+trolling&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=digital+line+counter" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=fishing+line+counter" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.amazon.com/s?k=digital+fishing+line+counter+trolling&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=digital+line+counter" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=fishing+line+counter" target="_blank" class="retailer-link">Cabela's</a>
               </div>
             </div>
           </article>
@@ -2874,9 +2822,9 @@
                 <li>Perfect line spooling every time</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=berkley+portable+line+spooler+station&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+line+spooler" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.google.com/search?tbm=shop&q=berkley+portable+line+spooler" target="_blank" class="btn btn-google">🔍 Compare</a>
+                <a href="https://www.amazon.com/s?k=berkley+portable+line+spooler+station&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=berkley+line+spooler" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.google.com/search?tbm=shop&q=berkley+portable+line+spooler" target="_blank" class="retailer-link">🔍 Compare</a>
               </div>
             </div>
           </article>
@@ -2896,9 +2844,9 @@
                 <li>Essential maintenance tool</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=fishing+line+stripper+cutter+tool&tag=castnfish02-20" target="_blank" class="btn btn-amazon">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=line+stripper+tool" target="_blank" class="btn btn-basspro">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=fishing+line+stripper" target="_blank" class="btn btn-cabelas">🏕️ Cabela's</a>
+                <a href="https://www.amazon.com/s?k=fishing+line+stripper+cutter+tool&tag=castnfish02-20" target="_blank" class="retailer-link">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=line+stripper+tool" target="_blank" class="retailer-link">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=fishing+line+stripper" target="_blank" class="retailer-link">Cabela's</a>
               </div>
             </div>
           </article>
@@ -2918,12 +2866,12 @@
                 <li>Battery powered accuracy</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=digital+fishing+line+counter+system&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Digital Line Counter')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=digital+line+counter" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Digital Line Counter')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=fishing+line+counter" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Digital Line Counter')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=line+counter+reel" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Digital Line Counter')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=digital+fishing+line+counter" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Digital Line Counter')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=digital+fishing+line+counter" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Digital Line Counter')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=digital+fishing+line+counter+system&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Digital Line Counter')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=digital+line+counter" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Digital Line Counter')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=fishing+line+counter" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Digital Line Counter')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=line+counter+reel" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Digital Line Counter')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=digital+fishing+line+counter" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Digital Line Counter')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=digital+fishing+line+counter" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Digital Line Counter')">eBay</a>
               </div>
             </div>
           </article>
@@ -2943,12 +2891,12 @@
                 <li>Perfect knots every time</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=fishing+knot+tying+tool+multi+purpose&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Knot Tying Tool')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=knot+tying+tool" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Knot Tying Tool')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=fishing+knot+tool" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Knot Tying Tool')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=knot+tying+tool" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Knot Tying Tool')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=fishing+knot+tying+tool" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Knot Tying Tool')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=fishing+knot+tying+tool" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Knot Tying Tool')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=fishing+knot+tying+tool+multi+purpose&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Knot Tying Tool')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=knot+tying+tool" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Knot Tying Tool')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=fishing+knot+tool" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Knot Tying Tool')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=knot+tying+tool" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Knot Tying Tool')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=fishing+knot+tying+tool" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Knot Tying Tool')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=fishing+knot+tying+tool" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Knot Tying Tool')">eBay</a>
               </div>
             </div>
           </article>
@@ -2968,12 +2916,12 @@
                 <li>Tournament legal verification</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=fishing+line+tension+strength+tester&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Line Tension Tester')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=line+tension+tester" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Line Tension Tester')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=fishing+line+tester" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Line Tension Tester')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=line+strength+tester" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Line Tension Tester')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=fishing+line+strength+tester" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Line Tension Tester')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=fishing+line+tension+tester" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Line Tension Tester')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=fishing+line+tension+strength+tester&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Line Tension Tester')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=line+tension+tester" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Line Tension Tester')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=fishing+line+tester" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Line Tension Tester')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=line+strength+tester" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Line Tension Tester')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=fishing+line+strength+tester" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Line Tension Tester')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=fishing+line+tension+tester" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Line Tension Tester')">eBay</a>
               </div>
             </div>
           </article>
@@ -2993,12 +2941,12 @@
                 <li>Clear viewing windows</li>
               </ul>
               <div class="product-actions">
-                <a href="https://www.amazon.com/s?k=fishing+line+storage+organizer+case&tag=castnfish02-20" target="_blank" class="btn btn-amazon" onclick="trackAffiliateClick('Amazon', 'Line Storage')">🛒 Amazon</a>
-                <a href="https://www.basspro.com/shop/en/search?Ntt=fishing+line+storage" target="_blank" class="btn btn-basspro" onclick="trackAffiliateClick('Bass Pro', 'Line Storage')">🎣 Bass Pro</a>
-                <a href="https://www.cabelas.com/search?q=fishing+line+organizer" target="_blank" class="btn btn-cabelas" onclick="trackAffiliateClick('Cabelas', 'Line Storage')">🏕️ Cabela's</a>
-                <a href="https://www.dickssportinggoods.com/search?searchTerm=line+storage+organizer" target="_blank" class="btn btn-dicks" onclick="trackAffiliateClick('Dicks', 'Line Storage')">⚽ Dick's</a>
-                <a href="https://www.walmart.com/search?q=fishing+line+storage+case" target="_blank" class="btn btn-walmart" onclick="trackAffiliateClick('Walmart', 'Line Storage')">🛍️ Walmart</a>
-                <a href="https://www.ebay.com/sch/i.html?_nkw=fishing+line+storage+organizer" target="_blank" class="btn btn-ebay" onclick="trackAffiliateClick('eBay', 'Line Storage')">💎 eBay</a>
+                <a href="https://www.amazon.com/s?k=fishing+line+storage+organizer+case&tag=castnfish02-20" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Amazon', 'Line Storage')">Amazon</a>
+                <a href="https://www.basspro.com/shop/en/search?Ntt=fishing+line+storage" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Bass Pro', 'Line Storage')">Bass Pro</a>
+                <a href="https://www.cabelas.com/search?q=fishing+line+organizer" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Cabelas', 'Line Storage')">Cabela's</a>
+                <a href="https://www.dickssportinggoods.com/search?searchTerm=line+storage+organizer" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Dicks', 'Line Storage')">Dick's</a>
+                <a href="https://www.walmart.com/search?q=fishing+line+storage+case" target="_blank" class="retailer-link" onclick="trackAffiliateClick('Walmart', 'Line Storage')">Walmart</a>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=fishing+line+storage+organizer" target="_blank" class="retailer-link" onclick="trackAffiliateClick('eBay', 'Line Storage')">eBay</a>
               </div>
             </div>
           </article>
@@ -3432,7 +3380,7 @@
         
         <div class="footer-section">
           <h4>💰 Legal Information</h4>
-          <p><strong>Affiliate Disclosure:</strong> Cast N Lines participates in affiliate programs including Amazon Associates (ID: castnfish02-20), Bass Pro Shops, Cabela's, Dick's Sporting Goods, Walmart, and eBay Partner Network. We earn from qualifying purchases made through our links at no extra cost to you.</p>
+          <p><strong>Affiliate Disclosure:</strong>eBay Partner Network. We earn from qualifying purchases made through our links at no extra cost to you.</p>
           <p>This helps us provide free, comprehensive reviews and maintain our independence.</p>
         </div>
       </div>
