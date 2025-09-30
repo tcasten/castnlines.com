@@ -1,0 +1,33 @@
+# Development and testing files
+*.bat
+create-netlify-deploy.ps1
+debug-amazon-links.html
+amazon-link-test.html
+test-links.html
+link-troubleshooting.html
+old.html
+simple-working-version.html
+working-version.html
+
+# Documentation files (keep only essential ones)
+AVOID-FILE-CONFUSION.md
+DIRECTORY-FIXED.md
+DNS-DIAGNOSIS.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# Deployment folders
+castnlines-netlify-deploy/

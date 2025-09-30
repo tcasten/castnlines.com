@@ -1,0 +1,11 @@
+<!-- Logo PNG Placeholder -->
+<!-- This is a text-based representation. For deployment, convert the SVG to PNG -->
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60">
+  <rect width="120" height="60" fill="#059669" rx="8"/>
+  <circle cx="25" cy="30" r="18" fill="#ffffff" opacity="0.9"/>
+  <path d="M15 25 Q25 20, 35 25 Q25 35, 15 25 Z" fill="#059669"/>
+  <text x="45" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Cast N</text>
+  <text x="45" y="40" font-family="Arial" font-size="14" font-weight="bold" fill="#34d399">Lines</text>
+  <path d="M8 15 Q20 10, 32 15" stroke="#34d399" stroke-width="2" fill="none"/>
+  <path d="M8 35 Q20 40, 32 35" stroke="#10b981" stroke-width="2" fill="none"/>
+</svg>
