@@ -1,0 +1,21 @@
+# Cast N Lines - Deployment Test
+
+This file helps verify the GitHub → Netlify integration is working.
+
+**Last Update:** September 30, 2025
+**Commit:** Auto-deployment test integration
+**Status:** Testing GitHub push → Netlify auto-deploy
+
+If you can see this file at `https://your-site-url/test-deploy.txt`, the integration is working!
+
+## How to Verify:
+1. Make changes in GitHub
+2. Push to main branch  
+3. Check if changes appear on live site within 1-2 minutes
+
+## Site Features Ready:
+✅ Complete fishing line hub
+✅ 15+ affiliate products with castnfish02-20 tag
+✅ Mobile responsive design
+✅ SEO optimized
+✅ Professional branding
